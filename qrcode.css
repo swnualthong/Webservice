@@ -1,0 +1,130 @@
+.article {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.box {
+    padding: 5% 10% 0 30%;
+}
+
+.container {
+    padding-bottom: 3%;
+    border: #19355b 5px solid;
+    border-radius: 15px;
+}
+
+h1 {
+    margin: 7% 0 5% 0;
+    font-weight: bolder;
+    font-size: 48px;
+    color: #19355b;
+    text-align: center;
+}
+
+#textinput {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#generate {
+    width: 20%;
+    padding: 10px 15px;
+    background-color: #ecb309;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ecb309;
+    text-align: center;
+}
+
+#create {
+    text-align: center;
+    display: none;
+}
+
+#generate:hover {
+    background-color: white;
+    color: #19355b;
+    border: 1px solid #19355b;
+}
+
+#generate:active {
+    background-color: #ecb309;
+    color: white;
+    border: 1px solid #ecb309;
+}
+
+.qrcontainer {
+    margin: 20px auto;
+    width: 50%;
+    max-width: 350px;
+    height: auto;
+}
+
+#qrcode {
+    width: 100%;
+    height: auto;
+}
+
+#save {
+    width: 20%;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #19355b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #19355b;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+
+    .box {
+        padding-left: 22%;
+    }
+
+    #save span {
+        display: none;
+    }
+
+    #gen {
+        display: none;
+    }
+
+    #create {
+        display: block;
+    }
+
+}
+
+/* Tablet Responsive */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    .box {
+        padding-left: 26%;
+    }
+
+}

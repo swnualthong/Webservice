@@ -1,0 +1,143 @@
+/* เกี่ยวกับฉัน About Me */
+.aboutme {
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.box h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.box {
+    padding: 0 0 0 20%;
+}
+
+.card {
+    border: solid black 3px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    background-color: #19355b;
+    padding: 5% 5%;
+    margin: 5% 10%;
+}
+
+.contact {
+    padding-left: 0px;
+}
+
+.contact li {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    list-style-type: none;
+    float: left;
+    border-radius: 50%;
+    margin: 15px 2% 0 0;
+}
+
+.contact li a {
+    font-size: 20px;
+    color: white;
+}
+
+.contact li a:hover {
+    color: #ecb309;
+}
+
+.profileimg {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: solid 4px #ecb309;
+    float: right;
+}
+
+.card h2 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    margin: 5px 0px;
+}
+
+.card p {
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+    
+    .card p{
+        font-size: 15px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact li {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    .contact li a {
+        font-size: 18px;
+    }
+
+    .profileimg {
+        max-width: 40%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+        float: none;
+    }
+
+}
+
+/* Tablet Responsive */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .card h2 {
+        font-size: 28px;
+    }
+    .card p{
+        font-size: 15px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+
+    .contact li {
+        width: 50px;
+        height: 50px;
+        margin: 0 8px 0 0;
+    }
+
+    .contact li a {
+        font-size: 30px;
+    }
+
+    .profileimg {
+        max-width: 40%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        margin-right: 40;
+    }
+}

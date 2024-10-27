@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="media/Menubar/Logo-Icon-Responsive.png" type="image/x-icon">
+
+    <!-- font link -->
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="alarm.css">
+
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/99326e5a8d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- ส่วนเมนูแถบข้าง -->
+        <div class="sidebar">
+            <a href="index.html" class="logo">
+                <img src="media/Menubar/Logo.png" class="logoimg">
+                <img src="media/Menubar/Logo-Icon-Responsive.png" class="logoimg-res">
+            </a>
+            <ul class="navsidebar">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span class="en-responsive">Home</span><span
+                            class="th-responsive">หน้าแรก</span></a></li>
+                <li><a href="aboutme.html"><i class="fa-solid fa-user"></i><span class="en-responsive">About</span><span
+                            class="th-responsive">เกี่ยวกับ</span></a></li>
+                <li><a href="QRgenaration.html"><i class="fa-solid fa-qrcode"></i><span
+                            class="en-responsive">QR-Gen</span><span class="th-responsive">คิวอาร์โค้ด</span></a></li>
+                <li><a href="ShortURL.html"><i class="fa-solid fa-link"></i><span
+                            class="en-responsive">Urlshorter</span><span class="th-responsive">ย่อลิงค์</span></a></li>
+                <li><a href="Alarm.html"><i class="fa-solid fa-bell"></i><span class="en-responsive">Alarm</span><span
+                            class="th-responsive">ตั้งปลุก</span></a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-comments"></i><span
+                            class="en-responsive">Contact</span><span class="th-responsive">ติดต่อ</span></a></li>
+            </ul>
+        </div>
+
+        <!-- ส่วนเนื้อหา -->
+        <div class="article">
+            <div class="box">
+                <div class="container">
+                    <h1>Alarm Clock</h1>
+                    <div class="timeinput">
+                        <input type="text" placeholder="Hour" id="hourInput">
+                        <input type="text" placeholder="Minute" id="minuteInput">
+                        <input type="text" placeholder="Second" id="secondInput">
+                    </div>
+                    <div>
+                        <span id="countdownDisplay">00:00:00:000</span>
+                    </div>
+                    <button id="generate">Start</button>
+                    <audio id="alarmSound" src="media/Password/Alarm.wav"></audio>
+                </div>
+            </div>
+        </div>
+
+        <script src="alarmlogic.js"></script>
+    </div>
+</body>
+
+</html>

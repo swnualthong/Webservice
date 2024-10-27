@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ช่องทางติดต่อ</title>
+    <link rel="shortcut icon" href="media/Menubar/Logo-Icon-Responsive.png" type="image/x-icon">
+
+    <!-- font link -->
+
+    <!-- css link nav side bar -->
+    <link rel="stylesheet" href="style.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/99326e5a8d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- ส่วนเมนูแถบข้าง -->
+    <div class="header">
+        <div class="sidebar">
+            <a href="index.html" class="logo">
+                <img src="media/Menubar/Logo.png" class="logoimg">
+                <img src="media/Menubar/Logo-Icon-Responsive.png" class="logoimg-res">
+            </a>
+            <ul class="navsidebar">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span class="en-responsive">Home</span><span
+                            class="th-responsive">หน้าแรก</span></a></li>
+                <li><a href="aboutme.html"><i class="fa-solid fa-user"></i><span class="en-responsive">About</span><span
+                            class="th-responsive">เกี่ยวกับ</span></a></li>
+                <li><a href="QRgenaration.html"><i class="fa-solid fa-qrcode"></i><span
+                            class="en-responsive">QR-Gen</span><span class="th-responsive">คิวอาร์โค้ด</span></a></li>
+                <li><a href="ShortURL.html"><i class="fa-solid fa-link"></i><span
+                            class="en-responsive">Urlshorter</span><span class="th-responsive">ย่อลิงค์</span></a></li>
+                <li><a href="Alarm.html"><i class="fa-solid fa-bell"></i><span class="en-responsive">Alarm</span><span
+                            class="th-responsive">ตั้งปลุก</span></a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-comments"></i><span
+                            class="en-responsive">Contact</span><span class="th-responsive">ติดต่อ</span></a></li>
+            </ul>
+        </div>
+
+        <!-- ส่วนเนื้อหา -->
+        <div class="contact">
+            <div class="contact-container">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.068837465438!2d100.53593611152375!3d13.714280586618111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f35d9bdff0d%3A0x8ec79fdd80befa7a!2sRajamangala%20University%20of%20Technology%20Krungthep!5e0!3m2!1sen!2sth!4v1727410205886!5m2!1sen!2sth"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps">
+                    </iframe>
+                </div>
+
+                <div class="form-container">
+                    <h2>Get in Touch</h2>
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="63f6af5a-8338-4fac-b04c-ff50b8b55be9">
+
+                        <label for="name">
+                            <i class="fas fa-user"></i> Name
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Sorrawit Nualthong" required autofocus>
+
+                        <label for="email">
+                            <i class="fas fa-envelope-open-text"></i> Email
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="you@gmail.com" required>
+
+                        <label for="subject">
+                            <i class="fas fa-font"></i> Subject
+                        </label>
+                        <input type="text" id="subject" name="subject" placeholder="หัวข้อที่ต้องการติดต่อ" required>
+
+                        <label for="content">
+                            <i class="fas fa-file-lines"></i> Content
+                        </label>
+                        <textarea id="content" name="content" rows="6" placeholder="เนื้อหาที่ต้องการติดต่อ"
+                            required></textarea>
+
+                        <button type="submit">
+                            <i class="fas fa-circle-check"></i> Submit
+                        </button>
+
+                        <div class="info">
+                            หากมีข้อสงสัยเพิ่มเติมติดต่อ <a href="tel:+66988413650" class="tel">+66 988413650</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

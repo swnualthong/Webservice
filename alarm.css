@@ -1,0 +1,111 @@
+.article {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.container {
+    padding-bottom: 3%;
+    border: #19355b 5px solid;
+    border-radius: 15px;
+}
+
+.box {
+    padding: 5% 10% 0 30%;
+}
+
+h1 {
+    margin: 7% 0 5% 0;
+    font-weight: bolder;
+    font-size: 48px;
+    color: #19355b;
+    text-align: center;
+}
+
+.timeinput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 0 5%;
+    width: 35%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.countdown-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#countdownDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20%;
+    font-size: 1rem;
+    color: #19355b;
+    padding: 20px;
+    border: 2px solid #19355b;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+}
+
+#generate {
+    width: 40%;
+    padding: 10px 20px;
+    background-color: #ecb309;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    margin: 3% auto;
+    border: 1px solid #ecb309;
+}
+
+#generate:hover {
+    background-color: white;
+    color: #19355b;
+    border: 1px solid #19355b;
+}
+
+#generate:active {
+    background-color: #ecb309;
+    color: white;
+    border: 1px solid #ecb309;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+
+    .box {
+        padding-left: 22%;
+    }
+
+    input {
+        font-size: 12px;
+    }
+    
+}
+
+/* Tablet Responsive */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    .box {
+        padding-left: 26%;
+    }
+
+    
+}

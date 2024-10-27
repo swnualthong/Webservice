@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="media/Menubar/Logo-Icon-Responsive.png" type="image/x-icon">
+
+    <!-- font link -->
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="urlshort.css">
+
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/99326e5a8d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- ส่วนเมนูแถบข้าง -->
+        <div class="sidebar">
+            <a href="index.html" class="logo">
+                <img src="media/Menubar/Logo.png" class="logoimg">
+                <img src="media/Menubar/Logo-Icon-Responsive.png" class="logoimg-res">
+            </a>
+            <ul class="navsidebar">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span class="en-responsive">Home</span><span
+                            class="th-responsive">หน้าแรก</span></a></li>
+                <li><a href="aboutme.html"><i class="fa-solid fa-user"></i><span class="en-responsive">About</span><span
+                            class="th-responsive">เกี่ยวกับ</span></a></li>
+                <li><a href="QRgenaration.html"><i class="fa-solid fa-qrcode"></i><span
+                            class="en-responsive">QR-Gen</span><span class="th-responsive">คิวอาร์โค้ด</span></a></li>
+                <li><a href="ShortURL.html"><i class="fa-solid fa-link"></i><span
+                            class="en-responsive">Urlshorter</span><span class="th-responsive">ย่อลิงค์</span></a></li>
+                <li><a href="Alarm.html"><i class="fa-solid fa-bell"></i><span class="en-responsive">Alarm</span><span
+                            class="th-responsive">ตั้งปลุก</span></a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-comments"></i><span
+                            class="en-responsive">Contact</span><span class="th-responsive">ติดต่อ</span></a></li>
+            </ul>
+        </div>
+
+        <!-- ส่วนเนื้อหา -->
+        <div class="article">
+            <div class="box">
+                <div class="container">
+                    <h1>URL Shortener</h1>
+                    <input type="text" placeholder="ใส่ลิงค์ที่ต้องการย่อ" id="longurl">
+                    <button id="shorten">Shorten</button><br>
+                    <input type="text" placeholder="Short Link" id="shorturl">
+                    <button id="copy">
+                        <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+                <h3 id="credit">Api by</h3>
+                <a href="https://www.rebrandly.com/"><img src="media/URL/Rebrandly.png" id="credit"></a>
+            </div>
+        </div>
+        <script src="logic.js"></script>
+        <script src="copy.js"></script>
+    </div>
+</body>
+
+</html>
