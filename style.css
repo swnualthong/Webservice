@@ -7,11 +7,13 @@ body {
 }
 
 .logo{
+    margin-top: 2%;
     display: block;
     margin-bottom: 15%;
 }
 
 .logoimg {
+    margin-top: 2%;
     display: block;
     width: 100%;
     text-align: center;
@@ -22,11 +24,16 @@ body {
     width: 18%;
     height: 100vh;
     background: #19355b;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    padding: 2% 2%;
+    padding: 0% 2%;
     z-index: 2;
+    overflow: scroll;
+}
+
+.sidebar::-webkit-scrollbar{
+    scrollbar-width: none;
 }
 
 .navsidebar {
@@ -44,9 +51,9 @@ body {
     border-radius: 8px;
     text-decoration: none;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 50%;
-
+    padding: 2%;
 }
 
 .navsidebar span {

@@ -5,6 +5,11 @@
     right: 0;
     backdrop-filter: blur(5px);
     z-index: 1;
+    overflow: scroll;
+}
+
+.article::-webkit-scrollbar {
+    display: none;
 }
 
 .container {

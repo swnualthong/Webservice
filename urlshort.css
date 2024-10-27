@@ -5,6 +5,11 @@
     right: 0;
     backdrop-filter: blur(5px);
     z-index: 1;
+    overflow: scroll;
+}
+
+.article::-webkit-scrollbar {
+    display: none;
 }
 
 .box {
@@ -95,11 +100,14 @@ h1 {
 @media only screen and (max-width: 600px) {
 
     .box {
-        padding-left: 22%;
+        padding-left: 16%;
     }
 
     #longurl,#shorten,#shorturl{
         left: 10%;
+    }
+    #longurl,#shorturl {
+        width: 45%;
     }
 
     #credit{
